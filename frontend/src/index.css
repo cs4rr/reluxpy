@@ -1,0 +1,157 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@theme {
+  --color-leather-50: #faf6f1;
+  --color-leather-100: #f2e8db;
+  --color-leather-200: #e4cfb7;
+  --color-leather-300: #d4b08e;
+  --color-leather-400: #c4916a;
+  --color-leather-500: #b87a52;
+  --color-leather-600: #a66446;
+  --color-leather-700: #8a4f3b;
+  --color-leather-800: #714235;
+  --color-leather-900: #5d382e;
+  --color-leather-950: #331c17;
+  
+  --color-gold-50: #fdfae8;
+  --color-gold-100: #fbf4c4;
+  --color-gold-200: #f8e78c;
+  --color-gold-300: #f3d24a;
+  --color-gold-400: #ecbc1c;
+  --color-gold-500: #dca40f;
+  --color-gold-600: #be7f0a;
+  --color-gold-700: #985c0b;
+  --color-gold-800: #7d4911;
+  --color-gold-900: #6a3c14;
+  --color-gold-950: #3d1f07;
+  
+  --font-family-serif: 'Playfair Display', serif;
+  --font-family-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  color: var(--color-leather-900);
+  background-color: var(--color-leather-50);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-serif);
+}
+
+.btn-primary {
+  background-color: var(--color-leather-700);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.125rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-leather-800);
+}
+
+.btn-primary:focus {
+  outline: none;
+  ring: 2px;
+  ring-color: var(--color-leather-500);
+  ring-offset: 2px;
+}
+
+.btn-secondary {
+  border: 2px solid var(--color-leather-700);
+  color: var(--color-leather-700);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.125rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-leather-700);
+  color: white;
+}
+
+.btn-gold {
+  background-color: var(--color-gold-500);
+  color: var(--color-leather-950);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.125rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-gold:hover {
+  background-color: var(--color-gold-600);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-leather-200);
+  border-radius: 0.125rem;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-leather-500);
+  box-shadow: 0 0 0 2px rgba(184, 122, 82, 0.2);
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.125rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.badge-discount {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: #dc2626;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.125rem;
+}
+
+.badge-wholesale {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: var(--color-gold-500);
+  color: var(--color-leather-950);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.125rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-leather-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-leather-400);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-leather-500);
+}
